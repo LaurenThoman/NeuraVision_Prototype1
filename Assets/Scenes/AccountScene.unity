@@ -7297,56 +7297,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1305402222
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1305402224}
-  - component: {fileID: 1305402223}
-  m_Layer: 0
-  m_Name: OnboardingController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1305402223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305402222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432d59a939b0a44c792e8deabb135269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OnboardingPager
-  contentPagesParent: {fileID: 0}
-  backButton: {fileID: 0}
-  continueButton: {fileID: 0}
-  continueLabel: {fileID: 0}
-  nextSceneName: AccountScene
-  lastPageText: Get Started
---- !u!4 &1305402224
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305402222}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04112, y: 0, z: 0.49206}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309100257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 82431f32caaf446b5aa5c974b15eab65, type: 3}
@@ -9150,7 +9100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1663380951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10183,7 +10133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2116986694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10927,6 +10877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3032334163924815212}
   - component: {fileID: 1435055188120635913}
+  - component: {fileID: 3032334163924815214}
   m_Layer: 0
   m_Name: Coaching UI
   m_TagString: Untagged
@@ -10934,6 +10885,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3032334163924815214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3032334163924815213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3785777327e3d4ad8a0a14f75e76ef06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoachingTabs
+  pages:
+  - {fileID: 1454175197}
+  - {fileID: 1283535356}
+  - {fileID: 171943793}
+  - {fileID: 1898727540}
+  buttons:
+  - {fileID: 1955852241}
+  - {fileID: 732725248}
+  - {fileID: 1216694164}
+  - {fileID: 604355498}
+  startPageIndex: 0
 --- !u!114 &3113582726696116336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11590,4 +11564,3 @@ SceneRoots:
   - {fileID: 619207843}
   - {fileID: 1453976112}
   - {fileID: 1602279231}
-  - {fileID: 1305402224}
