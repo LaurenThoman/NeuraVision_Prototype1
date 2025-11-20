@@ -1,8 +1,13 @@
 fileFormatVersion: 2
-guid: 819bcda6745874b4680f1cc12b6f08a2
+guid: fbbed73a3a3bb42b8a77d44dc08833ba
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Mball_INSTANCE/Mball:000:'
+    second: {fileID: 2100000, guid: d543eb7610fda4c9ca8e50854487591a, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -31,7 +36,7 @@ ScriptedImporter:
     createCurveRenderers: 0
   abcStartTime: 0.041666666666666664
   abcEndTime: 10.416666666666666
-  startTime: 0.0416666679084301
+  startTime: 0.041666666666666664
   endTime: 10.416666666666666
   importWarning: 
   firstImport: 0
