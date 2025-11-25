@@ -1,0 +1,2 @@
+Click the blue button in the top-right corner to open the progress bar.
+Click anywhere on the empty screen again to hide it.
