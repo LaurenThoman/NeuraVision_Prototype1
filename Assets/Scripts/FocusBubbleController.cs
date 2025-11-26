@@ -4,20 +4,23 @@ public class FocusBubbleController : MonoBehaviour
 {
     [Range(0f, 1f)]
     public float dimAmount = 0.5f;
-
     public Material dimMaterial;
+
+    public bool onlyWhenBookTracked = true;
 
     void Update()
     {
         if (dimMaterial == null) return;
 
-        Color c = dimMaterial.color;
-        c.a = dimAmount;
-        dimMaterial.color = c;
-    }
+        float targetAlpha = dimAmount;
 
-    public void SetDimFromSlider(float value)
-    {
-        dimAmount = value;
+        if (onlyWhenBookTracked && BookAnchor.Current == null)
+        {
+            targetAlpha = 0f;
+        }
+
+        Color c = dimMaterial.color;
+        c.a = targetAlpha;
+        dimMaterial.color = c;
     }
 }
