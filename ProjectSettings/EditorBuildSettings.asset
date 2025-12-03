@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/OnboardingScene.unity
     guid: 84e03fffb220e4b39a810d1525072451
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: 3acb43bb6e37a4747bd12331c8efb7dc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/OnboardingScene.unity
     guid: 84e03fffb220e4b39a810d1525072451
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/AccountScene.unity
     guid: 6a84503c7a67c4bf9bbe2dcd6be7065c
   - enabled: 1

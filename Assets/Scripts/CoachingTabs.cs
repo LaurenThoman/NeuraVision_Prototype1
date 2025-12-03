@@ -4,19 +4,18 @@ using UnityEngine.UI;
 public class CoachingTabs : MonoBehaviour
 {
     [Header("Pages in order")]
-    [SerializeField] GameObject[] pages;      // Page 1, Page 2, Page 3, Page 4
+    [SerializeField] GameObject[] pages;
 
     [Header("Buttons in same order")]
-    [SerializeField] Button[] buttons;        // Button for page 1, page 2, page 3, page 4
+    [SerializeField] Button[] buttons;
 
     [Header("Startup page index")]
-    [SerializeField] int startPageIndex = 0;  // 0 means first page
+    [SerializeField] int startPageIndex = 0;
 
     int currentIndex;
 
     void Awake()
     {
-        // Wire up buttons
         for (int i = 0; i < buttons.Length; i++)
         {
             int captured = i;
@@ -26,7 +25,8 @@ public class CoachingTabs : MonoBehaviour
         ShowPage(startPageIndex);
     }
 
-    void ShowPage(int index)
+    // make this public so other buttons can call it
+    public void ShowPage(int index)
     {
         currentIndex = Mathf.Clamp(index, 0, pages.Length - 1);
 
